@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/static/style_menu.css">
+</head>
+<body>
+    <div class="name">
+        <h1>{{ title }}</h1>
+    </div>
+    <div class="menu">
+        <table>
+            <tr>
+                <th>Назва</th>
+                <th>Ціна</th>
+                <th>Інгредієнти</th>
+            </tr>
+            {% for pizza in pizzas %}
+            <tr>
+                <td>{{ pizza.name }}</td>
+                <td>{{ pizza.price }}$</td>
+                <td>{{ pizza.ingredients }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+    <div class="nav_manu">
+        <button class="navigation" onclick="window.location.href='navigation';"> До навігації </button>
+    </div>
+</body>
