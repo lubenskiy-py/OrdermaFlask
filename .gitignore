@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,python,flask
-# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,python,flask
+# Created by https://www.toptal.com/developers/gitignore/api/flask,visualstudiocode,python
+# Edit at https://www.toptal.com/developers/gitignore?templates=flask,visualstudiocode,python
 
 ### Flask ###
 instance/*
@@ -278,4 +278,4 @@ pyrightconfig.json
 .history
 .ionide
 
-# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,python,flask
+# End of https://www.toptal.com/developers/gitignore/api/flask,visualstudiocode,python
