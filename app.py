@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 from models import db, Pizza
+from request import request, translate_weather
 
 app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///database.db"
@@ -7,7 +8,11 @@ db.init_app(app)
 
 @app.route("/homepage")
 def homepage():
-    return render_template("homepage.html", title='Orderman')
+    data = {
+        "weather" : translate_weather,
+        "temp" : request["main"]["temp"]
+    }
+    return render_template("homepage.html", data=data)
 
 @app.route("/menu")
 def menu():
