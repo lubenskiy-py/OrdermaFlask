@@ -18,9 +18,13 @@ def menu():
     }
     return render_template("menu.html", **context)
 
+
 @app.route("/")
 def navigation():
     return render_template("navigation.html")
+
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)
