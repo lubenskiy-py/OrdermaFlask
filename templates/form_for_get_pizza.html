@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Замовлення</title>
+    <link rel="stylesheet" href="/static/style_form_for_get_pizza.css">
+</head>
+<body>
+    <h1>Оформлення замовлення</h1>
+    <form action="/get-pizza" method="post">
+        <label for="bank_card">Введіть номер своєї банківської карти: </label>
+        <input type="text" name="bank_card" id="bank_card" required /> 
+        
+        <label for="email">Введіть свій email: </label>
+        <input type="email" name="email" id="email" required />
+
+        <button type="submit">Замовити</button>
+    </form>
+</body>
+</html>

@@ -65,3 +65,25 @@ th, td {
     background-color: #c25e14;
     transform: scale(0.95);
 }
+.order-button {
+    background-color: #f68b1f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.order-button:hover {
+    background-color: #d9731a;
+    transform: scale(1.05);
+}
+
+.order-button:active {
+    background-color: #c25e14;
+    transform: scale(0.95);
+}
